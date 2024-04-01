@@ -3,6 +3,7 @@ package com.example.capstone_design_woosuk;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -45,6 +46,7 @@ public class LoginActivity extends Activity {
     public void onTextViewClicked(View view) {
         // 클릭 시 실행할 동작 정의
         TextView myTextView = findViewById(R.id.textView);
-        myTextView.setText("Textview clicked!");
+        Intent intent = new Intent(getApplicationContext(), SignupActivity.class);
+        startActivity(intent);
     }
 }
